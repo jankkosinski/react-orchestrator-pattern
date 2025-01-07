@@ -45,7 +45,7 @@ The main-app folder contains the orchestrator that dynamically imports and rende
 
 
 Integration:
-- The main-app imports the microfrontend library using: `const HomePage = lazy(() => import('@micro-fe'));`
+- The main-app imports the microfrontend library using: `const MicroFE = lazy(() => import('@jk/micro-fe'));`
 - Webpack in main-app ensures compatibility with the dynamically loaded chunks from the microfrontend.
 
 This example project provides a foundation for creating scalable, independent, and reusable frontend applications using the microfrontend architecture. It demonstrates how to build and consume a microfrontend as a library, integrate it into an orchestrator, and handle dependencies effectively.

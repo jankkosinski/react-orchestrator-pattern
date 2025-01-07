@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`LoadingPage > Renders the LoadingPage component 1`] = `
+<div>
+  <div
+    class="container"
+    id="Loading"
+  >
+    LoadingPage
+  </div>
+</div>
+`;

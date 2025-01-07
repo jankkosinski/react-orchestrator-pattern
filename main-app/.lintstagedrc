@@ -1,0 +1,4 @@
+{
+  "src/**/*{.ts,.tsx,.js,.jsx}": ["prettier --check", "eslint"],
+  "src/**/*.css": ["stylelint"]
+}
