@@ -1,6 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import styles from './welcomebox.module.scss';
 
 export const WelcomeBox = () => {
-  return <div className={styles.container}>WelcomeBox</div>;
+  const { t } = useTranslation();
+  return (
+    <div className={styles.container}>
+      <div className={styles.animatedText}>{t('welcome')}</div>
+    </div>
+  );
 };

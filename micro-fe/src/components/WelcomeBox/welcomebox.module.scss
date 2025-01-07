@@ -1,3 +1,65 @@
+@import '../../scss/colors';
+
 .container {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  background: linear-gradient(45deg, $primary, $secondary, $accent);
+  background-size: 300% 300%;
+  border: solid 2px $secondary;
+  border-radius: 10px;
+  animation: backgroundAnimation 8s infinite alternate;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+}
+
+.animatedText {
+  font-size: 3rem;
+  font-weight: bold;
+  color: $neutral;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 
+    0 0 10px $neutral,
+    0 0 20px $accent,
+    0 0 30px $primary,
+    0 0 40px $primary,
+    0 0 50px $secondary;
+  animation: glow 2s infinite alternate, textColorChange 4s infinite alternate;
+}
+
+/* Background animation */
+@keyframes backgroundAnimation {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Glow effect animation */
+@keyframes glow {
+  0% {
+    text-shadow: 
+      0 0 5px $neutral,
+      0 0 10px $primary,
+      0 0 20px $accent,
+      0 0 30px $accent,
+      0 0 40px $secondary;
+  }
+  100% {
+    text-shadow: 
+      0 0 10px $neutral,
+      0 0 20px $secondary,
+      0 0 30px $complementary,
+      0 0 40px $complementary,
+      0 0 50px $primary;
+  }
+}
+
+/* Text color animation */
+@keyframes textColorChange {
+  0% { color: $primary; }
+  50% { color: $complementary; }
+  100% { color: $accent; }
 }

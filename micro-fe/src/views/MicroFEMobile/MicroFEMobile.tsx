@@ -1,8 +1,12 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { LangButton, WelcomeBox } from '../../components';
 import styles from './microfemobile.module.scss';
 
 export const MicroFEMobile = () => {
-  const { t } = useTranslation();
-  return <div className={styles.wrapper}>{t('welcome')}</div>;
+  return (
+    <div className={styles.wrapper}>
+      <WelcomeBox />
+      <LangButton />
+    </div>
+  );
 };
