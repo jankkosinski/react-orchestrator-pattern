@@ -1,0 +1,1 @@
+export { MicroFE } from './MicroFE';
