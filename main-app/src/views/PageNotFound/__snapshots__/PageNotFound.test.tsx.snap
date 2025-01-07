@@ -5,7 +5,7 @@ exports[`PageNotFound > Renders the PageNotFound component 1`] = `
   <div
     class="container"
   >
-    PageNotFound
+    Page Not Found
   </div>
 </div>
 `;

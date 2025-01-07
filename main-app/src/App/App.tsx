@@ -1,9 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import {
-  Route,
-  BrowserRouter as Router,
-  Routes,
-} from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { LoadingPage, PageNotFound } from '../views';
 
 const MicroFE = lazy(() => import('@jk/micro-fe'));

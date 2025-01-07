@@ -1,1 +1,1 @@
-export { WelcomeBox } from './WelcomeBox'
+export { WelcomeBox } from './WelcomeBox';

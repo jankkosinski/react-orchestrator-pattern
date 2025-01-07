@@ -4,9 +4,5 @@ import styles from './microfedesktop.module.scss';
 
 export const MicroFEDesktop = () => {
   const { t } = useTranslation();
-  return (
-    <div className={styles.wrapper}>
-      {t('welcome')}
-    </div>
-  );
+  return <div className={styles.wrapper}>{t('welcome')}</div>;
 };
