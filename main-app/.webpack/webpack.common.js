@@ -12,6 +12,9 @@ const output = {
   clean: true,
 };
 const resolve = {
+  alias: {
+    react: path.resolve('./node_modules/react'),
+  },
   extensions: ['.tsx', '.ts', '.js', '.jsx'],
 };
 const commonRules = [
